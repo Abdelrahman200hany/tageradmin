@@ -1,0 +1,98 @@
+{
+  "project_info": {
+    "project_number": "384924126188",
+    "project_id": "tager-2cbaf",
+    "storage_bucket": "tager-2cbaf.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:384924126188:android:d0f0555a329563ae678ec9",
+        "android_client_info": {
+          "package_name": "com.example.tager"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "384924126188-e6citolqu01lsfumhn9p5req90jvvjct.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.tager",
+            "certificate_hash": "1d950616d9a8c737deb863760aeefc7615d502de"
+          }
+        },
+        {
+          "client_id": "384924126188-k02o9jctt9npuh1mge6tp3chshttj124.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.tager",
+            "certificate_hash": "7be665cdc3311fb9ae09b7078f9710d4acb8aa87"
+          }
+        },
+        {
+          "client_id": "384924126188-8cdhotfnrrqa6li9nf0kk2et7lmn0ta8.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD2BhhYjECPmB4erPkdb61LQOuBYsut6SQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "384924126188-8cdhotfnrrqa6li9nf0kk2et7lmn0ta8.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "384924126188-6ut9tnku3qg8b7pnf29d9dhvedk373rl.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.example.tager"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:384924126188:android:807ee3a5b84c099b678ec9",
+        "android_client_info": {
+          "package_name": "com.example.tageradmin"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "384924126188-8cdhotfnrrqa6li9nf0kk2et7lmn0ta8.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD2BhhYjECPmB4erPkdb61LQOuBYsut6SQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "384924126188-8cdhotfnrrqa6li9nf0kk2et7lmn0ta8.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "384924126188-6ut9tnku3qg8b7pnf29d9dhvedk373rl.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.example.tager"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
