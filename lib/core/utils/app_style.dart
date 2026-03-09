@@ -81,6 +81,7 @@ abstract class AppStyle {
       color: const Color(0xFF949D9E),
     );
   }
+   
 
   static TextStyle styleBold16(BuildContext context) {
     return TextStyle(

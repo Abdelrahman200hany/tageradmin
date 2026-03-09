@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:tageradmin/core/utils/app_color.dart';
 
-
 class CounterCustomWidget extends StatelessWidget {
   const CounterCustomWidget({super.key, this.isIncrement = true ,this.onTap});
   final bool isIncrement;

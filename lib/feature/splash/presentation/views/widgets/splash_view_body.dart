@@ -1,7 +1,7 @@
 import 'package:animate_do/animate_do.dart';
 import 'package:flutter/material.dart';
 import 'package:tageradmin/core/utils/assets.dart';
-import 'package:tageradmin/feature/auth/presentation/views/sign_view.dart';
+import 'package:tageradmin/main_view.dart';
 
 class SplashViewBody extends StatefulWidget {
   const SplashViewBody({super.key});
@@ -36,7 +36,7 @@ class _SplashViewBodyState extends State<SplashViewBody> {
 
   void _splashNavigation() {
     Future.delayed(Duration(seconds: 4), () {
-      Navigator.pushReplacementNamed(context, SignView.routeName);
+      Navigator.pushReplacementNamed(context, MainView.routeName);
     });
   }
 }

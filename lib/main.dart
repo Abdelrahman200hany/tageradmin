@@ -1,11 +1,20 @@
+import 'package:device_preview/device_preview.dart';
+import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_localizations/flutter_localizations.dart';
 import 'package:tageradmin/core/methods/generate_route.dart';
+import 'package:tageradmin/core/serviecs/servies_locator/servies_locator_.dart';
 import 'package:tageradmin/feature/splash/presentation/views/splash_view.dart';
+import 'package:tageradmin/firebase_options.dart';
 import 'package:tageradmin/generated/l10n.dart';
 
-void main() {
-  runApp(const TagerAdmin());
+void main() async {
+  WidgetsFlutterBinding.ensureInitialized();
+  await Firebase.initializeApp(options: DefaultFirebaseOptions.currentPlatform);
+  setUP();
+  runApp(
+    DevicePreview(enabled: true, builder: (context) => const TagerAdmin()),
+  );
 }
 
 class TagerAdmin extends StatelessWidget {
@@ -22,6 +31,8 @@ class TagerAdmin extends StatelessWidget {
       ],
       supportedLocales: S.delegate.supportedLocales,
       locale: Locale('ar'),
+
+      builder: DevicePreview.appBuilder,
 
       theme: ThemeData(
         colorScheme: ColorScheme.light(),
