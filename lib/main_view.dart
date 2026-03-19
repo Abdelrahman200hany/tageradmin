@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:tageradmin/core/consts/consts.dart';
 import 'package:tageradmin/core/widgets/custom_text_bottom_with_background.dart';
-import 'package:tageradmin/feature/auth/presentation/views/add_product_view.dart';
+import 'package:tageradmin/feature/add_product_view/presentation/views/add_product_view.dart';
 
 class MainView extends StatelessWidget {
   const MainView({super.key});

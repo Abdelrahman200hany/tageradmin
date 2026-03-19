@@ -10,7 +10,7 @@ class ImageRepoImpt implements ImageRepo {
 
   ImageRepoImpt(this.storageServiecs);
   @override
-  Future<Either<Faulire, String>> upLoaded(File iamgeFile) async {
+  Future<Either<Faulire, String>> upLoadedIamge(File iamgeFile) async {
     try {
       String url = await storageServiecs.upLoadFile(iamgeFile, 'images');
       return right(url);

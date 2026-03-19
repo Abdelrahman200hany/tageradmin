@@ -7,10 +7,10 @@ import 'package:tageradmin/core/serviecs/storage/storage_serviecs.dart';
 class FireStorage implements StorageServiecs {
   final stroageReference = FirebaseStorage.instance.ref();
   @override
-  Future<String> upLoadFile(File file, String path) async {
+  Future<String> upLoadFile(File file, String pathUrl) async {
     String fileName = b.basename(file.path);
     String extension = b.extension(file.path);
-    var fileRef = stroageReference.child('$path/$fileName.$extension');
+    var fileRef = stroageReference.child('$pathUrl/$fileName.$extension');
     await fileRef.putFile(file);
     String fileUrl = await fileRef.getDownloadURL();
     return fileUrl;

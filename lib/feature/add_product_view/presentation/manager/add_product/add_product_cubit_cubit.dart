@@ -3,7 +3,7 @@ import 'package:meta/meta.dart';
 
 import 'package:tageradmin/core/repos/add_product/add_product_repo.dart';
 import 'package:tageradmin/core/repos/image_repo/image_repo.dart';
-import 'package:tageradmin/feature/auth/domain/entitiy/add_product_entity.dart';
+import 'package:tageradmin/feature/add_product_view/domain/entitiy/add_product_entity.dart';
 
 part 'add_product_cubit_state.dart';
 
@@ -15,7 +15,7 @@ class AddProductCubit extends Cubit<AddProductCubitState> {
 
   Future<void> addProduct({required AddProductEntity product}) async {
     emit(AddProductCubitLoading());
-    var result = await imageRepo.upLoaded(product.productImageFile);
+    var result = await imageRepo.upLoadedIamge(product.productImageFile);
     result.fold(
       (faulire) {
         emit(AddProductCubitFaulire(faulire.faulireMessage));

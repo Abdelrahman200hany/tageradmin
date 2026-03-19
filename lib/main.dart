@@ -4,6 +4,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_localizations/flutter_localizations.dart';
 import 'package:tageradmin/core/methods/generate_route.dart';
 import 'package:tageradmin/core/serviecs/servies_locator/servies_locator_.dart';
+import 'package:tageradmin/core/serviecs/storage/supaBase_storage.dart';
 import 'package:tageradmin/feature/splash/presentation/views/splash_view.dart';
 import 'package:tageradmin/firebase_options.dart';
 import 'package:tageradmin/generated/l10n.dart';
@@ -11,9 +12,11 @@ import 'package:tageradmin/generated/l10n.dart';
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
   await Firebase.initializeApp(options: DefaultFirebaseOptions.currentPlatform);
+  await SupaBaseStorageServices.initSupabase();
+  await SupaBaseStorageServices.createBuckets('fruitImages');
   setUP();
   runApp(
-    DevicePreview(enabled: true, builder: (context) => const TagerAdmin()),
+    DevicePreview(enabled: false, builder: (context) => const TagerAdmin()),
   );
 }
 

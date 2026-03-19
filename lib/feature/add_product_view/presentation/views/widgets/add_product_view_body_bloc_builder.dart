@@ -2,8 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:skeletonizer/skeletonizer.dart';
 import 'package:tageradmin/core/widgets/build_sncak_bar.dart';
-import 'package:tageradmin/feature/auth/presentation/manager/add_product/add_product_cubit_cubit.dart';
-import 'package:tageradmin/feature/auth/presentation/views/widgets/add_product_view_body.dart';
+import 'package:tageradmin/feature/add_product_view/presentation/manager/add_product/add_product_cubit_cubit.dart';
+import 'package:tageradmin/feature/add_product_view/presentation/views/widgets/add_product_view_body.dart';
 
 class AddProductViewBodyBlocBuilder extends StatelessWidget {
   const AddProductViewBodyBlocBuilder({super.key});
